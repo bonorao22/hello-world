@@ -10,7 +10,7 @@ jobs:
           command: "echo Greetinngs and Salutations"
       - run: mkdir -p my_workspace
       - run: 
-          command: "echo Trying to use my workspace"
+          command: "echo-output Trying to use my workspace"
       
   two:
     docker:
@@ -19,6 +19,7 @@ jobs:
       - checkout
       - run:
           command: "echo A more familiar Hi"
+          
       - run:|
         if [[ $(cat echo-output == "Trying my workspace") ]]; then 
         echo "It works!";
@@ -27,4 +28,5 @@ jobs:
 workflows:
   one_and_two:
     jobs:
+      - one
       - two
