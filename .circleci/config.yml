@@ -19,6 +19,7 @@ jobs:
   three:
     docker:
       - image: cimg/ruby:3.0.2\
+    parallelism: 2
     steps:
       - checkout
       - run: echo "Countinous Integration"
@@ -27,6 +28,7 @@ jobs:
   four:  
     docker:
       - image: cimg/ruby:3.0.2
+    parallelism: 2
     steps:
       - checkout
       - run: echo "CircleCI"
