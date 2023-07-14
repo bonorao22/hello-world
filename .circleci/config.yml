@@ -9,8 +9,6 @@ jobs:
       - run:
           command: "echo Greetinngs and Salutations"
       - run: mkdir -p my_workspace
-      - run: 
-        echo-output: "Trying to use my workspace"
       
   two:
     docker:
