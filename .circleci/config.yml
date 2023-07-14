@@ -16,10 +16,28 @@ jobs:
       - checkout
       - run: echo "A more familiar Hi"
       - run: sleep 15
-          
+  three:
+    docker:
+      - image: cimg/ruby:3.0.2\
+    steps:
+      - checkout
+      - run: echo "Countinous Integration"
+      - run: sleep 10
+
+  four:  
+    docker:
+      - image: cimg/ruby:3.0.2
+    steps:
+      - checkout
+      - run: echo "CircleCI"
+      - run: sleep 15
 workflows:
   one_and_two:
     jobs:
       - one
       - two
+  three_and_four:
+    jobs:
+      - three
+      - four
 
