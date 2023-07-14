@@ -21,9 +21,9 @@ jobs:
           command: "echo A more familiar Hi"
           
       - run:|
-        if [[ $(cat echo-output == "Trying my workspace") ]]; then 
-        echo "It works!";
-        fi;
+            if [[ $(cat echo-output == "Trying my workspace") ]]; then 
+            echo "It works!";
+            fi;
 
 workflows:
   one_and_two:
