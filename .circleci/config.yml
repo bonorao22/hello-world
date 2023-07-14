@@ -7,10 +7,7 @@ jobs:
     steps:
       - checkout
       - run: echo "Greetinngs and Salutations"
-      - run: |
-          if [[ $(cat echo == "Greentings and Salutations") ]]; then 
-          echo "It works";
-          fi;
+      - run: sleep 25
  
   two:
     docker:
