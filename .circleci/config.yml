@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: echo "Greetinngs and Salutations"
-      - sleep 25
+      - run: sleep 25
       
   two:
     docker:
@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run: echo "A more familiar Hi"
-      - sleep 15
+      - run: sleep 15
           
 
 
