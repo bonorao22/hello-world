@@ -2,14 +2,14 @@ version: 2
 jobs:
     one:
     	docker:
-      		- image: cimg/ruby:3.0.2
+      		-image: cimg/ruby:3.0.2
     	steps:
       		- checkout
       		- run: echo "Hello World"
-          - run: sleep 25
+          	- run: sleep 25
 
 workflows:
   version: 2
-    	jobs:
-		    one_and_two:
-      	    -one
+    jobs:
+	one_and_two:
+      	    - one
