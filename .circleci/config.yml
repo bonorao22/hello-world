@@ -10,7 +10,7 @@ jobs:
           command: "echo Greetinngs and Salutations"
       - run: mkdir -p my_workspace
       - run: 
-          command: "echo-output Trying to use my workspace"
+        echo-output: "Trying to use my workspace"
       
   two:
     docker:
