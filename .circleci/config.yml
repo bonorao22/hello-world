@@ -7,9 +7,8 @@ jobs:
     steps:
       - checkout
       - run: echo "Greetinngs and Salutations"
-      - echo-output: "Greetings and Salutations"
       - run: |
-          if [[ $(cat echo-output == "Greentings and Salutations") ]]; then 
+          if [[ $(cat echo == "Greentings and Salutations") ]]; then 
           echo "It works";
           fi;
  
