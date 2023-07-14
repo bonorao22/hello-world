@@ -6,8 +6,6 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - a: "Landscape"
-      - run: a
       - run: echo "Greetinngs and Salutations"
       - run: sleep 25
  
